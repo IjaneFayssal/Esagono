@@ -6,14 +6,14 @@ namespace Esagono
     {
         static void Main(string[] args)
         {
-            int lato = 0;
+            double lato = 0;
             double Area = 0;
-            double apotema = 0.866 * lato;
             double cost = 2.598;
             double baricentro = 0;
             char scelta = ' ';
             Console.Write("Inserisci lunghezza lato(cm): ");
-            lato = Convert.ToInt32(Console.ReadLine());
+            lato = Convert.ToDouble(Console.ReadLine());
+            double apotema = 0.866 * lato;
             do
             {
                 //Console.Clear();
