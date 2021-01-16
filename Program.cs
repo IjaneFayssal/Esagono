@@ -22,7 +22,7 @@ namespace Esagono
                 switch (scelta)
                 {
                     case 'A':
-                        Console.WriteLine("Il perimetro dell'esagono regolare è: " + (6 * lato)+"cm");
+                        Console.WriteLine("Il perimetro dell'esagono regolare è: " + Math.Round((6 * lato), 2)+"cm");
                         break;
                     case 'B':
                         //Area = ((6 * lato) * apotema) / 2;
@@ -37,6 +37,7 @@ namespace Esagono
                         break;
                     case 'D':
                         Console.Write("Inserisci nuova lunghezza lato(cm): ");
+                        lato=Convert.ToInt32(Console.ReadLine()); 
 ;                       break;
                     case '|':
                         Console.WriteLine("ciao");
